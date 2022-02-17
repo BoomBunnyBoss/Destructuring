@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const movie = {
+  title: 'Star Wars',
+  releaseDate: 'May 25, 1977',
+  country: 'United States',
+  starring: {
+    leadActor: 'Mark Hamill',
+    leadActress: 'Carrie Fisher'
+  },
+  runningTimeMinutes: 121,
+  language: 'English',
+  budget: 11000000
+};
+
+let {leadActor, leadActress} = movie.starring;
+console.log(leadActor, leadActress) // 'Mark Hamill', 'Carrie Fisher'
+</script>
+</html>
